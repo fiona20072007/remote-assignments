@@ -40,6 +40,35 @@ button {
   color: white;
   padding: 10px;
 }
+.nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-bottom: 620px;
+  padding-right: 150px;
+  background-color: white;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+}
+.sidebar a {
+  display: inline-block;
+  align-self: left;
+  padding: 20px;
+}
+.exit {
+  margin: 0px;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+#hide {
+  display: none;
+}
 
 /*section*/
 .sectiontitle {
@@ -74,6 +103,7 @@ body {
   margin: auto;
   font-size: 4em;
   color: white;
+  cursor: pointer;
 }
 .row {
   display: flex;
@@ -92,7 +122,8 @@ footer {
 /*media queries*/
 
 @media (min-width: 800px) {
-  .button-toggle {
+  .button-toggle,
+  .nav-bar {
     display: none;
   }
 }
@@ -110,7 +141,8 @@ footer {
 }
 
 @media (max-width: 800px) {
-  li {
+  .main-nav li,
+  .nav-bar {
     display: none;
   }
 }
