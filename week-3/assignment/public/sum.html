@@ -29,19 +29,20 @@
             "Assignment 3 - 3 : " + n.number;
         }
       };
-      let inp = event.target.value;
-      inputXhr.open("GET", `http://localhost:3000/getData?number=${inp}`);
+      //let inp = event.target.value;
+      inputXhr.open("GET", `http://localhost:3000/getData?number=10`);
       function send() {
         inputXhr.send();
       }
     </script>
-
-    <button id="load" onclick="sendAJAX()">Assignment 3 - 2: Send</button>
-    <br />
-    <input type="text" value="" id="int" />
-    <button id="input" onclick="send()">Assignment 3 - 3: Send</button>
   </head>
   <body>
+    <button id="load" onclick="sendAJAX()">Assignment 3 - 2: Send</button>
+    <br />
+    <form method="get">
+      <input type="text" value="" id="int" />
+      <button id="input" onclick="send()">Assignment 3 - 3: Send</button>
+    </form>
     <h2>Answer:</h2>
     <div id="ajax">Assignment 3 - 2:</div>
     <div id="ajax1">Assignment 3 - 3:</div>
