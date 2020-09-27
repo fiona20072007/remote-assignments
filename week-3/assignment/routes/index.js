@@ -15,10 +15,10 @@ router.get("/getData", (req, res) => {
   }
 
   let ans = 0;
-  for (i = 1; i <= parsed; i++) {
+  for (let i = 1; i <= parsed; i++) {
     ans += i;
   }
-  let num = String(ans);
+  let num = ans.toString();
   res.send({ number: num });
 });
 

@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    title Hello
+
+  body
+    if name 
+      h2 Welcome, #{name}!
+      form(action="/myName", method="post")
+        button(type="submit") goodbye
+
+    form(action="/myName/trackName", method="post")
+        label Please enter your name:
+            input(type="text", name="username")
+        button(type="submit") Submit
