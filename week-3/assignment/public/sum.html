@@ -34,16 +34,17 @@
         let a = document.getElementById("guess").value;
         inputXhr.open("GET", `http://localhost:3000/getData?number=${a}`);
         inputXhr.send();
+        document.getElementById("guess").value = "";
       }
     </script>
   </head>
   <body>
-    <button id="load" onclick="sendAJAX()">Assignment 3 - 3: Send</button>
+    <button id="load" onclick="sendAJAX()">Assignment 3 - 3 : Send</button>
     <br />
     <input type="text" value="" id="guess" />
-    <button id="loadNext" onclick="send()">Assignment 3 - 4: Send</button>
+    <button id="loadNext" onclick="send()">Assignment 3 - 4 : Send</button>
     <h2>Answer:</h2>
-    <div id="ajax">Assignment 3 - 3:</div>
-    <div id="ajax1">Assignment 3 - 4:</div>
+    <div id="ajax">Assignment 3 - 3 :</div>
+    <div id="ajax1">Assignment 3 - 4 :</div>
   </body>
 </html>
