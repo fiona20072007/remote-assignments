@@ -7,7 +7,7 @@ router.get("/", (req, res) => {
 
 router.get("/getData", (req, res) => {
   const number = req.query.number;
-  const parsed = parseInt(number);
+  const parsed = parseInt(number, 10);
   if (number == null) {
     res.send("<h1>Lack of Parameter</h1>");
   } else if (isNaN(parsed)) {

@@ -12,7 +12,7 @@
         if (xhr.readyState === 4 && xhr.status === 200) {
           var num = JSON.parse(xhr.responseText);
           document.getElementById("ajax").innerHTML =
-            "Assignment 3 - 2 : " + num.number;
+            "Assignment 3 - 3 : " + num.number;
         }
       };
       xhr.open("GET", "http://localhost:3000/getData?number=10");
@@ -26,7 +26,7 @@
         if (inputXhr.readyState === 4 && inputXhr.status === 200) {
           var n = JSON.parse(inputXhr.responseText);
           document.getElementById("ajax1").innerHTML =
-            "Assignment 3 - 3 : " + n.number;
+            "Assignment 3 - 4 : " + n.number;
         }
       };
 
@@ -38,12 +38,12 @@
     </script>
   </head>
   <body>
-    <button id="load" onclick="sendAJAX()">Assignment 3 - 2: Send</button>
+    <button id="load" onclick="sendAJAX()">Assignment 3 - 3: Send</button>
     <br />
     <input type="text" value="" id="guess" />
-    <button id="loadNext" onclick="send()">Assignment 3 - 3: Send</button>
+    <button id="loadNext" onclick="send()">Assignment 3 - 4: Send</button>
     <h2>Answer:</h2>
-    <div id="ajax">Assignment 3 - 2:</div>
-    <div id="ajax1">Assignment 3 - 3:</div>
+    <div id="ajax">Assignment 3 - 3:</div>
+    <div id="ajax1">Assignment 3 - 4:</div>
   </body>
 </html>
