@@ -9,7 +9,7 @@ html(lang="en")
       form(action="/myName", method="post")
         button(type="submit") goodbye
 
-    form(action="/myName/trackName", method="post")
+    form(action=`/myName/trackName?name=${name}`, method="post")
         label Please enter your name:
             input(type="text", name="username")
         button(type="submit") Submit
