@@ -15,6 +15,8 @@ router.post("/trackName", (req, res) => {
   res.cookie("username", req.body.username);
   res.redirect("/myName");
 });
+//如果用get就是拿req.query.username
+//如果用post就是拿req.body.username
 
 router.post("/", (req, res) => {
   res.clearCookie("username");
