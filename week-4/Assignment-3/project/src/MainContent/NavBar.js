@@ -3,8 +3,8 @@ import React from "react";
 const NavBar = props => {
   if (props.menuShow) {
     return (
-      <div class="nav-bar">
-        <ul class="sidebar">
+      <div className="nav-bar">
+        <ul className="sidebar">
           <li>
             <a href="#">item1</a>
           </li>
@@ -18,7 +18,7 @@ const NavBar = props => {
             <a href="#">item4</a>
           </li>
         </ul>
-        <h3 class="exit" onClick={props.menuToggle}>
+        <h3 className="exit" onClick={props.menuToggle}>
           X
         </h3>
       </div>
